@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio da Eduarda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" /> <!-- arquivo style.css na mesma pasta -->
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <p class="lead">Eu sou Eduarda</p>
+            <h1>Estudante do Ensino Médio</h1>
+            <p>Sou apaixonada por livros, filmes e séries e no meu tempo livre adoro desfrutar disso. Aqui estão alguns dos meus favoritos:</p>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Projetos Pessoais</h2>
+        </div>
+
+        <div class="row g-4">
+            <!-- Livro favorito -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/livro.png" class="card-img-top" alt="Livro favorito" />
+                    <div class="card-body">
+                        <h5 class="card-title">Meu Livro de Romance Favorito</h5>
+                        <p class="card-text">Uma página que mostra o livro que mais amo, com capa, autora e uma pequena sinopse da história.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLivro">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filmes favoritos -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/filmes.png" class="card-img-top" alt="Filmes favoritos" />
+                    <div class="card-body">
+                        <h5 class="card-title">Filmes de Comédia Romântica Favoritos</h5>
+                        <p class="card-text">Página com alguns dos meus "comfort filmes" de comédia romântica.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFilmes">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Séries de comédia favoritas -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/series.png" class="card-img-top" alt="Séries favoritas" />
+                    <div class="card-body">
+                        <h5 class="card-title">Séries de Comédia Favoritas</h5>
+                        <p class="card-text">Uma página leve e divertida com duas séries de comédia que mais me marcaram, como "How I Met Your Mother" e "Modern Family".</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSeries">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal: Livros -->
+    <div class="modal fade" id="modalLivro" tabindex="-1" aria-labelledby="modalLivroLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Meu Livro Favorito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nessa página, você encontra o meu livro favorito de todos os tempos. O livro tem capa, nome da autora e um link para quem quiser conhecer mais ou comprar.</p>
+                    <img src="img/livro.png" class="img-fluid w-100" alt="Livro favorito" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Filmes -->
+    <div class="modal fade" id="modalFilmes" tabindex="-1" aria-labelledby="modalFilmesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Filmes Românticos Favoritos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Essa página apresenta meus filmes românticos favoritos, como "10 Coisas que Eu Odeio em Você" e "Para Todos os Garotos que Já Amei". Com sinopse e um toque pessoal.</p>
+                    <img src="img/filmes.png" class="img-fluid w-100" alt="Filmes favoritos" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Séries -->
+    <div class="modal fade" id="modalSeries" tabindex="-1" aria-labelledby="modalSeriesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Séries de Comédia Favoritas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Essa página é dedicada às minhas séries preferidas que me fazem rir até hoje. Com imagem e curiosidades sobre "How I Met Your Mother" e "Modern Family".</p>
+                    <img src="img/series.png" class="img-fluid w-100" alt="Séries favoritas" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© Copyright 2024. Produzido por Eduarda</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
